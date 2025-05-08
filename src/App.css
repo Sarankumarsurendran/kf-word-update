@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+html{
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-description{
+  max-width: 500px;
+  word-break: break-word;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0 0 0 / 14%);
+}
+
+.table-header {
+  background-color: #63a0dd;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+th, td{
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-data button{
+  border: none;
+}
+
+input{
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.input-field .error-message{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: red;
+  width: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+form button{
+  max-height: 30px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table tr:last-child td {
+  border-bottom: none;
+}
+
+.input-field {
+  max-height: 30px;
+}
+
+.action-buttons button:first-child{
+  border-radius: 5px;
+  background: green;
+  color: #ffffff;
+}
+
+.action-buttons button:last-child{
+  border-radius: 5px;
+  background: red;
+  color: #ffffff;
+}
+
+.submit-button{
+  padding: 18px;
+  border-radius: 10px;
+  background: #21b7ea;
 }
